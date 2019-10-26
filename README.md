@@ -1,7 +1,10 @@
 # website
 This repository will serve as the main https://myhomework.space website. The client repository will be moved to https://app.myhomework.space.
 
+A live preview is served at https://dev.myhomework.space.
+
 ## How to run
+First, copy `_data/vars-sample.yml` to `_data/vars.yml`. Adjust `yars.yml` as needed. Then, run this commands:
 ```shell
 bundle install
 bundle exec jekyll server --port 4003
