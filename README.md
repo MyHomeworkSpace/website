@@ -1,5 +1,5 @@
 # website
-This repository will serve as the main https://myhomework.space website. The client repository will be moved to https://app.myhomework.space.
+This repository is the main https://myhomework.space website. (if you're looking for https://app.myhomework.space, that's the [client repository](https://github.com/MyHomeworkSpace/client))
 
 ## How to run
 For local development, you can start the Jekyll server like so:
