@@ -4,3 +4,4 @@ exclude: [ "README.md" ]
 
 # site variables
 app_base_url: "http://app.myhomework.invalid"
+api_base_url: "http://api-v2.myhomework.invalid"
