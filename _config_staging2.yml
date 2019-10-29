@@ -1,1 +1,2 @@
 app_base_url: "https://app.staging2.myhomework.space"
+api_base_url: "http://api-v2.staging2.myhomework.space"
