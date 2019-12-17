@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
+	{% if page.home %}
+	<title>MyHomeworkSpace</title>
+	{% else %}
 	<title>{{ page.title }} | MyHomeworkSpace</title>
+	{% endif %}
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
