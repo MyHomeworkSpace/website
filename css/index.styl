@@ -3,11 +3,6 @@
 body
 	position: relative
 
-.landing
-	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)
-	height: 75vh
-	overflow: hidden
-
 .landing>.container-fluid, .header-row, .landing-text
 	height: 100%
 
@@ -24,13 +19,94 @@ body
 	.landing-graphic
 		display: none
 
-.landing-text
-	display: flex
-	flex-direction: column
-	justify-content: center
+.landing
+	background: #f5f7fa
+	padding-top: 4rem
+	padding-bottom: 5rem
+	overflow: hidden
 
-.landing-text-2
-	font-size: 24px
+	.landing-text
+		padding-top: 0.5rem
+		padding-left: 1rem
+
+		.landing-title
+			font-size: 3.5rem
+			margin-bottom: 0.75rem
+
+			em
+				position: relative
+
+				.landing-title-underline
+					display: block
+					background: url(/img/underline.svg)
+					background-size: contain
+					background-repeat: no-repeat
+					width: 100%
+					height: 0.75rem
+					position: absolute
+					top: 3.5rem
+					left: 0
+
+		.landing-subtitle
+			font-size: 1.5rem
+
+		.btn
+			background: #3a98d4
+			border: none
+			font-size: 1.25rem
+			padding: 0.75rem 1.5rem
+
+		.btn:hover
+			background: #4C63B6
+
+		.btn:active
+			background: #35469C
+
+	.landing-graphic
+		position: relative
+		height: 16rem
+		overflow-y: hidden
+
+		.homeworkItem
+			cursor: default
+			background: white
+			border-radius: 3px
+			border: solid 1px #cbcccd
+			border-left-width: 4px
+			border-top-left-radius: 0
+			border-bottom-left-radius: 0
+			box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2)
+			font-size: 14px
+			padding: 10px
+			padding-right: 30px
+			margin-bottom: 8px
+			position: relative
+			transition: all 0.2s
+
+			.homeworkItemName
+				font-size: 1rem
+
+				.homeworkItemNamePrefix
+					color: white
+					padding: 2px
+
+			.homeworkItemDetails
+				.homeworkItemDetailsClassDot
+					display: inline-block
+					width: 12px
+					height: 12px
+					border-radius: 100%
+					margin-right: 2px
+
+	.landing-graphic:after
+		content: " "
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-image: linear-gradient(180deg, transparent 50%, #f5f7fa 100%)
 
 #otherfeatures, #bottom-get-started
 	background-color: #333
@@ -55,52 +131,6 @@ body
 #bottom-get-started
 	padding-top: 5rem
 	padding-bottom: 10rem
-
-.landing-graphic
-	position: relative
-	display: flex
-	align-items: center
-	justify-content: flex-end
-
-.landing-graphic-background
-	height: 70%
-	width: 90%
-	background-color: #ffffff
-	border-radius: 30px
-	padding: 30px
-	box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19)
-	overflow: hidden
-
-.hwItem:hover
-	background-color: #c8c8c8
-
-.hwItem
-	cursor: default
-	background: #ffffff
-	border: 1px solid #cbcccd
-	border-left-width: 4px
-	border-radius: 3px
-	border-top-left-radius: 0
-	border-bottom-left-radius: 0
-	box-shadow: 0 2px 4px rgba(0, 0, 0, .18)
-	padding: .8rem
-	margin-bottom: 1.2rem
-	position: relative
-	transition: all .2s
-	font-size: 14px
-	margin: 5px
-
-.hwOptions
-	color: #3c3c3c
-	font-size: 16px
-	opacity: 0
-	position: absolute
-	right: 10px
-	transition: all .2s
-
-.hwItem .hwName
-	font-size: 16px
-	font-weight: 500
 
 .graphic-time-period
 	text-align: center

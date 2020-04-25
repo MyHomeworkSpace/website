@@ -5,125 +5,46 @@ home: true
 ---
 
 <div class="landing">
-	<div class="container-fluid">
-		<div class="row header-row">
-			<div class="landing-text col-md-4">
-				<h1 class="display-3">Stay organized.</h1>
-				<p class="lead landing-text-2">MyHomeworkSpace is an online planner that lets you keep all your homework in one place.</p>
-				<a href="{{ site.app_base_url }}" class="btn btn-outline-secondary">Get started &raquo;</a>
-			</div>
-			<div class="landing-graphic col-md-8">
-				<div class="landing-graphic-background">
-					<div class="row">
-						<div class="col-md-4">
-							<p class="graphic-time-period">Tomorrow</p>
-							<div class="hwItem" style="border-left-color: rgb(76, 108, 155);">
-								<div class="hwOptions"><i class="fa fa-circle-o"></i><i class="fa fa-edit"></i></div>
-								<div class="hwName"><span><span style="background-color: rgb(76, 108, 155); color: rgb(255, 255, 255); padding: 2px;">Read</span>
-										next day</span></div>
-								<div class="hwDetails">
-									<div>
-										<i class="fa fa-calendar-o"></i> Tomorrow
-									</div>
-									<div>
-										<span class="className">
-											<span style="display: inline-block; width: 12px; height: 12px; border-radius: 100%; margin-right: 2px; background-color: rgb(255, 165, 64);"></span>
-											English
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="hwItem" style="border-left-color: rgb(76, 108, 155);">
-								<div class="hwOptions"><i class="fa fa-circle-o"></i><i class="fa fa-edit"></i></div>
-								<div class="hwName"><span><span style="background-color: rgb(76, 108, 155); color: rgb(255, 255, 255); padding: 2px;">HW</span>
-										4.2</span></div>
-								<div class="hwDetails">
-									<div>
-										<i class="fa fa-calendar-o"></i> Tomorrow
-									</div>
-									<div>
-										<span class="className">
-											<span style="display: inline-block; width: 12px; height: 12px; border-radius: 100%; margin-right: 2px; background-color: #ff40f5;"></span>
-											Math
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<p class="graphic-time-period">Soon</p>
-							<div class="hwItem" style="border-left-color: #ffa500;">
-								<div class="hwOptions"><i class="fa fa-circle-o"></i><i class="fa fa-edit"></i></div>
-								<div class="hwName"><span><span style="background-color: #ffa500; color: rgb(255, 255, 255); padding: 2px;">Quiz</span>
-										vocab</span></div>
-								<div class="hwDetails">
-									<div>
-										<i class="fa fa-calendar-o"></i> Tuesday
-									</div>
-									<div>
-										<span class="className">
-											<span style="display: inline-block; width: 12px; height: 12px; border-radius: 100%; margin-right: 2px; background-color: #ff4d40;"></span>
-											Language
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="hwItem" style="border-left-color: #2ac0f1;">
-								<div class="hwOptions"><i class="fa fa-circle-o"></i><i class="fa fa-edit"></i></div>
-								<div class="hwName"><span><span style="background-color: #2ac0f1; color: #ffffff; padding: 2px;">ICA</span>
-										lead class about WWII</span></div>
-								<div class="hwDetails">
-									<div>
-										<i class="fa fa-calendar-o"></i> Thursday
-									</div>
-									<div>
-										<span class="className">
-											<span style="display: inline-block; width: 12px; height: 12px; border-radius: 100%; margin-right: 2px; background-color: #a940ff;"></span>
-											History
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="hwItem" style="border-left-color: #2af15e;">
-								<div class="hwOptions"><i class="fa fa-circle-o"></i><i class="fa fa-edit"></i></div>
-								<div class="hwName"><span><span style="background-color: #2af15e; color: rgb(255, 255, 255); padding: 2px;">Study</span>
-										for test</span></div>
-								<div class="hwDetails">
-									<div>
-										<i class="fa fa-calendar-o"></i> Friday
-									</div>
-									<div>
-										<span class="className">
-											<span style="display: inline-block; width: 12px; height: 12px; border-radius: 100%; margin-right: 2px; background-color: rgb(255, 165, 64);"></span>
-											English
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<p class="graphic-time-period">Long-term</p>
-							<div class="hwItem" style="border-left-color: #dc143c;">
-								<div class="hwOptions"><i class="fa fa-circle-o"></i><i class="fa fa-edit"></i></div>
-								<div class="hwName"><span><span style="background-color: #dc143c; color: rgb(255, 255, 255); padding: 2px;">Test</span>
-										on chapters 1-12</span></div>
-								<div class="hwDetails">
-									<div>
-										<i class="fa fa-calendar-o"></i> next Thursday
-									</div>
-									<div>
-										<span class="className">
-											<span style="display: inline-block; width: 12px; height: 12px; border-radius: 100%; margin-right: 2px; background-color: rgb(255, 165, 64);"></span>
-											English
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
+	<div class="container">
+		<div class="row">
+			<div class="landing-graphic col-md-3">
+				<div class="homeworkItem" style="border-left-color: #4c6c9b">
+					<div class="homeworkItemName">
+						<span class="homeworkItemNamePrefix" style="background-color: #4c6c9b">Read</span>
+						next chapter
+					</div>
+					<div class="homeworkItemDetails">
+						<div><i class="fa fa-calendar-o"></i> Tomorrow</div>
+						<div><div class="homeworkItemDetailsClassDot" style="background-color: #ffa540;"></div> English</div>
 					</div>
 				</div>
+
+				<div class="homeworkItem" style="border-left-color: #dc143c">
+					<div class="homeworkItemName">
+						<span class="homeworkItemNamePrefix" style="background-color: #dc143c">Test</span>
+						on molecules
+					</div>
+					<div class="homeworkItemDetails">
+						<div><i class="fa fa-calendar-o"></i> next Tuesday</div>
+						<div><div class="homeworkItemDetailsClassDot" style="background-color: #40ff73;"></div> Science</div>
+					</div>
+				</div>
+
+				<div class="homeworkItem" style="border-left-color: #9acd32">
+					<div class="homeworkItemName">
+						<span class="homeworkItemNamePrefix" style="background-color: #9acd32">Project</span>
+						proposal
+					</div>
+					<div class="homeworkItemDetails">
+						<div><i class="fa fa-calendar-o"></i> a week from Friday</div>
+						<div><div class="homeworkItemDetailsClassDot" style="background-color: #4d4d4d;"></div> History</div>
+					</div>
+				</div>
+			</div>
+			<div class="landing-text col-md-9">
+				<h1 class="landing-title">Stay <em>organized<div class="landing-title-underline"></div></em>.</h1>
+				<p class="lead landing-subtitle">MyHomeworkSpace is an online planner that lets you keep all your homework in one place.</p>
+				<a href="{{ site.app_base_url }}" class="btn btn-primary btn-lg">Get started &raquo;</a>
 			</div>
 		</div>
 	</div>
@@ -132,7 +53,7 @@ home: true
 	<div class="container fh">
 		<div class="row fh">
 			<div class="col-md-7 vertical-center fh">
-				<div class="display-4">Planner</div>
+				<h2>Planner</h2>
 				<p class="lead">
 					Planner lets you store, tag, and manage your homework, functioning as a complete replacement for your paper planner. Planner displays your homework and assignments in a familiar grid, exactly how you would see it on a paper planner.
 				</p>
@@ -150,7 +71,7 @@ home: true
 				<p class="giant-icon"><i class="fa fa-file-text fa-fw"></i></p>
 			</div>
 			<div class="col-md-7 vertical-center tar">
-				<div class="display-4">Homework</div>
+				<h2>Homework</h2>
 				<p class="lead">
 					Homework sorts your assignments into 4 columns, "Today," "Tomorrow," "Soon," and "Long Term," allowing you to focus on your work, without the fear of being blindsided by a far away assignment.
 				</p>
@@ -162,7 +83,7 @@ home: true
 	<div class="container fh">
 		<div class="row fh">
 			<div class="col-md-7 vertical-center fh">
-				<div class="display-4">Calendar</div>
+				<h2>Calendar</h2>
 				<p class="lead">
 					Calendar lets you schedule your day. It's connected to Planner and Homework, so you can easily add all of your assignments. It also downloads your class schedule for you, so you don't have to waste time entering when your classes are.
 				</p>
@@ -180,7 +101,7 @@ home: true
 				<p class="giant-icon"><i class="fa fa-cloud fa-fw"></i></p>
 			</div>
 			<div class="col-md-7 vertical-center tar">
-				<div class="display-4">Cloud Sync</div>
+				<h2>Cloud Sync</h2>
 				<p class="lead">
 					All your data is saved to the cloud, so you can access it from anywhere with an internet connection.
 				</p>
@@ -226,10 +147,16 @@ home: true
 	<h1>Ready to try it?</h1><br>
 	<a href="{{ site.app_base_url }}" class="btn btn-light btn-lg">Get Started</a>
 	<br /><br />
-	<small class="fine-print">
-		Developer? MyHomeworkSpace is <a href="https://github.com/myhomeworkspace">open source software</a> under the <a href="/license">MIT License</a>.
-	</small>
-	<small class="fine-print">Worried about your privacy? Read our privacy policy <a href="https://support.myhomework.space/legal">here</a>.</small>
+	<div>
+		<small class="fine-print">
+			Developer? MyHomeworkSpace is <a href="https://github.com/myhomeworkspace">open source software</a> under the <a href="/license">MIT License</a>.
+		</small>
+	</div>
+	<div>
+		<small class="fine-print">
+			Worried about your privacy? Read our privacy policy <a href="https://support.myhomework.space/legal">here</a>.
+		</small>
+	</div>
 </div>
 <link rel="stylesheet" href="css/index.css" />
 <script src="js/index.js"></script>
