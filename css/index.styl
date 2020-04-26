@@ -19,6 +19,46 @@ body
 	.landing-graphic
 		display: none
 
+.btn.btn-primary
+	border: none
+	background: #3a98d4
+
+.btn.btn-primary:hover
+	background: #4c63b6
+
+.btn.btn-primary:active
+	background: #35469c
+
+.homeworkItem
+	color: #212529
+	cursor: default
+	background: white
+	border-radius: 3px
+	border: solid 1px #cbcccd
+	border-left-width: 4px
+	border-top-left-radius: 0
+	border-bottom-left-radius: 0
+	box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2)
+	font-size: 14px
+	padding: 10px
+	padding-right: 30px
+	margin-bottom: 8px
+	position: relative
+
+.homeworkName
+	font-size: 1rem
+
+	.homeworkNamePrefix
+		color: white
+		padding: 2px
+
+.classNameDot
+	display: inline-block
+	width: 12px
+	height: 12px
+	border-radius: 100%
+	margin-right: 2px
+
 .landing
 	background: #f5f7fa
 	padding-top: 2rem
@@ -49,53 +89,22 @@ body
 
 		.landing-subtitle
 			font-size: 1.5rem
+			margin-bottom: 0.25rem
+
+			em
+				color: #19216c
+				font-style: normal
+				font-weight: 400
 
 		.btn
-			background: #3a98d4
-			border: none
 			font-size: 1.25rem
+			margin-top: 0.75rem
 			padding: 0.75rem 1.5rem
-
-		.btn:hover
-			background: #4C63B6
-
-		.btn:active
-			background: #35469C
 
 	.landing-graphic
 		position: relative
 		height: 16rem
 		overflow-y: hidden
-
-		.homeworkItem
-			cursor: default
-			background: white
-			border-radius: 3px
-			border: solid 1px #cbcccd
-			border-left-width: 4px
-			border-top-left-radius: 0
-			border-bottom-left-radius: 0
-			box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2)
-			font-size: 14px
-			padding: 10px
-			padding-right: 30px
-			margin-bottom: 8px
-			position: relative
-
-			.homeworkItemName
-				font-size: 1rem
-
-				.homeworkItemNamePrefix
-					color: white
-					padding: 2px
-
-			.homeworkItemDetails
-				.homeworkItemDetailsClassDot
-					display: inline-block
-					width: 12px
-					height: 12px
-					border-radius: 100%
-					margin-right: 2px
 
 	.landing-graphic:after
 		content: " "
@@ -107,68 +116,65 @@ body
 		height: 100%
 		background-image: linear-gradient(180deg, transparent 50%, #f5f7fa 100%)
 
-#otherfeatures, #bottom-get-started
-	background-color: #333
+.feature-section
+	background: #4055A8
 	color: white
-	text-align: center
-
-.feature-marquee
-	width: 100%
 	padding: 2rem 0
-	overflow: hidden
 
-.mini-feature, .fine-print
-	opacity: 0.7
-	transition: opacity .5s
+	.feature-section-title
+		font-size: 2rem
 
-.mini-feature
-	padding-right: 90px !important
+	.feature-section-details
+		font-size: 1.25rem
+		font-weight: 300
+		margin-bottom: 0.5rem
 
-.mini-feature:hover, .fine-print:hover
-	opacity: 1
+.feature-section.feature-homework-view
+	.homeworkView
+		.homeworkViewColumnTitle
+			font-size: 1.25rem
+			margin-bottom: 0.25rem
 
-#bottom-get-started
-	padding-top: 5rem
-	padding-bottom: 10rem
+.feature-section.feature-quick-add
+	background: #4C63B6
 
-.graphic-time-period
+	.feature-section-details
+		margin-bottom: 1rem
+
+	.quickAdd
+		margin-bottom: 0.5rem
+
+		.col-md-4
+			.quickAddInput
+				border: solid 1px white
+				padding: 0.25rem 0.5rem
+
+			.quickAddArrow
+				font-size: 2rem
+				text-align: center
+
+			.quickAddResult
+				background: white
+				box-shadow: 0 3px 17px 0 rgba(50, 50, 50, 0.75)
+				color: #212529
+				font-size: 14px
+				padding: 40px
+
+				.homeworkName
+					font-size: 18px
+
+.bottom-section
+	background-color: #f5f7fa
 	text-align: center
+	padding: 2rem 0
 
-.planner-feature
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
-	color: white
+	.bottom-section-title
+		font-size: 2rem
 
-.hw-feature
-	background-image: linear-gradient(75deg, #2af598 0%, #009efd 100%)
-	color: white
-
-.schedule-feature
-	background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%)
-	color: white
-
-.cloud-feature
-	background-image: linear-gradient(-215deg, #30cfd0 0%, #330867 100%)
-	color: white
+	.btn
+		margin-top: 0.25rem
+		margin-bottom: 0.25rem
 
 .feature
 	height: 20rem
 	min-height: 250px
-
-.vertical-center
-	display: flex
-	flex-direction: column
-	justify-content: center
-	height: 100%
-
-.fh
-	height: 100%
-
-.giant-icon
-	font-size: 200px
-
-.tar
-	text-align: right
-
-@media only screen and (max-width: 768px)
-	.icon-holder
-		display: none
